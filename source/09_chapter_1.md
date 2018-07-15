@@ -1,37 +1,20 @@
-# Introduction, with a citation
+# Introducción
 
-## Background
+## Sobre la holografía, ventajas e inconvenientes
 
-This is the introduction. Quisque finibus aliquet cursus. Integer in pellentesque tellus. Duis eu dignissim nulla, a porttitor enim. Quisque vehicula leo non ultrices finibus. Duis vehicula quis sem sit amet sollicitudin. Integer neque est, pharetra et auctor vel, iaculis interdum lectus.
+La holografía es una técnica fotográfica que permite codificar de forma fidedigna una escena 3D en un medio 2D (ya sea este físico o digital), conservando y permitiendo reconstruir la escena original. En la holografía tradicional ésto se consigue conservando la información de la fase, información que se pierde en la fotografía convencional, que sólo registra la intensidad.
 
-<!-- 
-To include a reference, add the citation key shown in the references.bib file.
--->
+<!--- Esquema de funcionamiento de un holograma --> 
 
-To include a citation to the text, just add the citation key shown in the references.bib file. The style of the citation is determined by the ref_format.csl file. For example, in The Living Sea you can find pictures of the Calypso [@Cousteau1963].
+Para conservar información de la fase es indispensable utilizar una fuente de luz altamente coherente, lo que introduce una serie de inconvenientes frente a la fotografía tradicional. La necesidad de utilizar un láser convierte al proceso en inherentemente monocromático, la alta sensibilidad del dispositivo dado su principio de operación interferométrico impone unas condiciones para la toma de imágenes que no siempre se pueden satisfacer, sobre todo en muestras que presentan movimiento (tejidos vivos, polen en agua, etc), la alta coherencia de la luz empleada produce efectos de difracción importantes en muestras pequeñas (microscopia holográfica), y por último imposibilita el uso de tinturas fluorescentes, ampliamente utilizadas en el ámbito de la biología.
 
-In neque mauris, maximus at sapien a, iaculis dignissim justo. Aliquam erat volutpat. Praesent varius risus auctor est ultricies, sit amet consequat nisi laoreet. Suspendisse non est et mauris pharetra sagittis non porta justo. Praesent malesuada metus ut sapien sodales ornare.
+## FINCH como alternativa a la holografía clásica
 
-## The middle bit
+FINCH (**F**resnel **In**coherent **C**orrelation **H**ologram) es un método, descrito por primera vez en 2007 por Joseph Rosen y Gary Brooker 
+que presenta frente a la holografía tradicional la ventaja de emplear luz incoherente, salvando así los inconvenientes antes mencionados. Si bien este método no permite conservar información de la fase, sí permite codificar la profundidad en el propio holograma, pudiendo reconstruirse una imagen 3D o bien una imagen 2D con un plano focal arbitrario. Al ser un proceso incoherente pueden utilizarse tinturas fluorescentes, lo que junto a su adaptabilidad a sistemas de microscopía, lo hace un candidato interesante para su uso en ramas relacionadas con la biología y la medicina.
 
-This is the middle bit. Phasellus quis ex in ipsum pellentesque lobortis tincidunt sed massa. Nullam euismod sem quis dictum condimentum. Suspendisse risus metus, elementum eu congue quis, viverra ac metus. Donec non lectus at lectus euismod laoreet pharetra semper dui. Donec sed eleifend erat, vel ultrices nibh. Nam scelerisque turpis ac nunc mollis, et rutrum nisl luctus.
 
-Duis faucibus vestibulum elit, sit amet lobortis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed at cursus nibh. Sed accumsan imperdiet interdum. Proin id facilisis tortor. Proin posuere a neque nec iaculis. Suspendisse potenti. Nullam hendrerit ante mi, vitae iaculis dui laoreet eu.
 
-Cras eleifend velit diam, eu viverra mi volutpat ut. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus leo nec dui imperdiet, tincidunt ornare orci venenatis. Maecenas placerat efficitur est, eu blandit magna hendrerit eu.
 
-### Subsection of the middle bit
-
-This is a subsection of the middle bit. Quisque sit amet tempus arcu, ac suscipit ante. Cras massa elit, pellentesque eget nisl ut, malesuada rutrum risus. Nunc in venenatis mi. Curabitur sit amet suscipit eros, non tincidunt nibh. Phasellus lorem lectus, iaculis non luctus eget, tempus non risus. Suspendisse ut felis mi.
-
-## Summary of chapters
-
-<!-- 
-For italic, add one * on either side of the text
-For bold, add two * on either side of the text
-For bold and italic, add _** on either side of the text
--->
-
-This is a brief outline of what went into each chapter. **Chapter 1** gives a background on duis tempus justo quis arcu consectetur sollicitudin.  **Chapter 2** discusses morbi sollicitudin gravida tellus in maximus.  **Chapter 3** discusses vestibulum eleifend turpis id turpis sollicitudin aliquet.  **Chapter 4** shows how phasellus gravida non ex id aliquet. Proin faucibus nibh sit amet augue blandit varius.
 
 
