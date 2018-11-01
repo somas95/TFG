@@ -1,32 +1,24 @@
-# Literature review, with maths
+# Sistemas formadores de imágenes
 
-<!--
-After the introductory chapter, it seems fairly common to 
-include a chapter that reviews the literature and 
-introduces methodology used throughout the thesis.
--->
+## Sistemas fotográficos convencionales
 
-## Introduction
+En un sistema óptico ideal $M$ existen un conjunto infinito de pares de planos llamados *planos conjugados*, para los que a cada punto en un plano objeto le corresponde unívocamente un punto en su plano conjugado imagen. Las figuras que conforman un plano objeto y la correspondiente figura de su plano conjugado imagen están directamente relacionadas por una transformación de escala.
 
-This is the introduction. Duis in neque felis. In hac habitasse platea dictumst. Cras eget rutrum elit. Pellentesque tristique venenatis pellentesque. Cras eu dignissim quam, vel sodales felis. Vestibulum efficitur justo a nibh cursus eleifend. Integer ultrices lorem at nunc efficitur lobortis.
+Un sistema fotográfico es un sistema óptico en el que se situa un medio fotosensible (sales de plata para fotografía analógica, un CCD para fotografía digital) en un plano imagen, registrando el objeto situado en su correspondiente plano objeto. Variando el sistema $M$ podemos ajustar dónde deseamos que esté el plano objeto para captarlo con fidelidad, ya que todos los planos que no sean el conjugado -fuera de foco- son registrados, pero desenfocados.
 
-## The middle
+>Imagen
 
-This is the literature review. Nullam quam odio, volutpat ac ornare quis, vestibulum nec nulla. Aenean nec dapibus in mL/min^-1^. Mathematical formula can be inserted using Latex:
+## Holografía convencional
 
-(@ref_for_eqn1) $f(x) = ax^3 + bx^2 + cx + d$
+>A desarrollar
 
-Nunc eleifend, ex a luctus porttitor, felis ex suscipit tellus, ut sollicitudin sapien purus in libero. Nulla blandit eget urna vel tempus. Praesent fringilla dui sapien, sit amet egestas leo sollicitudin at.  
+## Sistema FINCH
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed faucibus pulvinar volutpat. Ut semper fringilla erat non dapibus. Nunc vitae felis eget purus placerat finibus laoreet ut nibh.
+En FINCH, a cada punto del objeto le corresponde la proyección de una placa zonal de Fresnel (FZP o placa zonal en adelante). Una placa zonal es una figura descrita por una fórmula del tipo $$\dfrac{1\pm \cos{kr^2}}{2}$$ donde $k$ es una constante y $r$ es la distancia desde el centro de la placa a un punto dado. De esta manera, la posición de la FZP proyectada en el plano imagen determina la posición transversal del punto objeto, y la escala de la FZP, su posición axial:
 
-## Conclusion
+>Imagen funcionamiento FINCH
 
-This is the conclusion. Donec pulvinar molestie urna eu faucibus. In tristique ut neque vel eleifend. Morbi ut massa vitae diam gravida iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+A diferencia de una fotografía convencional, donde el medio de registro proporciona directamente la imagen (o un negativo en fotografía analógica), para FINCH es necesario realizar una reconstrucción (de nuevo, analógica o digital) para recuperar la imagen deseada:
 
-<!-- Insert an unordered list -->
-
-- first item in the list
-- second item in the list
-- third item in the list
+>Imagen FINCH y su reconstrucción en un plano concreto
 
