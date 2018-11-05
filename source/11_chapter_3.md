@@ -26,7 +26,11 @@ Según la complejidad del campo inicial a propagar es conveniente usar diferente
 
 ## Aproximaciones para la propagación de la luz
 
->A desarrollar
+>A desarrollar:
+>Rayleigh-Sommerfeld Fraunhofer Diffraction 
+>$$U(x,y,z)=\frac{-i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
+>Angular Spectrum method
+>Conveniencia del uso de transformadas discretas rápidas de Fourier en nuestro usecase
 
 
 ## Esquema operativo
@@ -35,7 +39,7 @@ Las simulaciones realizadas han seguido el siguiente esquema general:
 
 >Esquema
 
-Se han considerado muestras bidimensionales y tridimensionales emisoras de luz, propagando la luz emitida por esas muestras hasta la FZP, y volviendo a propagar desde la FZP hasta el objetivo geométrica y ondulatoriamente.
+Se han considerado muestras bidimensionales y tridimensionales emisoras de luz, propagando la luz emitida por esas muestras hasta la FZP, y volviendo a propagar desde la FZP hasta el objetivo geométricamente y mediante la FFT mencionada.
 
 ## Propagación de la fuente a la FZP
 
