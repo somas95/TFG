@@ -20,8 +20,25 @@ No es trivial detectar que un holograma está aliasado, así que se hace necesar
 
 Para ello se ha diseñado un kernel de convolución para detectar altas frecuencias en la imagen:
 
-## Matrices de convolución para detección de features en una imagen
+### Matrices de convolución para detección de aliasing en una imagen
 
-En nuestro contexto hablamos de la convolución de una matriz kernel (generalmente de 3x3) con la matriz imagen. A cada elemento de la matriz imagen corresponde el resultado de la multiplicación matricial (o variantes según la definición de la convolución) de la submatriz centrada en ella del tamaño del kernel por el propio kernel. Esto permite realizar operaciones "context-aware", para las que la transformación de un píxel depende de los valores de los píxeles que le rodean. Ésto la hace una buena candidata para el caso que nos ocupa, en el que queremos detectar variaciones altas de valores en píxeles adjunto, indicadoras de aliasing. 
+En nuestro contexto hablamos de la convolución de una matriz kernel (generalmente de 3x3) con una matriz imagen. Para cada elemento de la matriz imagen tomamos una submatriz centrada en éste y del tamaño del kernel. Asignaremos a este elemento la suma de las multiplicaciones elemento a elemento de la submatriz y el kernel, es decir, si $R_{ij}$ es el elemento $i,j$ de la matriz resultante de la convolución, $I$ es la matriz imagen, $S$ la submatriz del tamaño del kernel centrada en $I_{ij}$ y $K$ la matriz kernel:
 
-Después de un proceso iterativo llegamos al siguiente kernel, que nos ofrece unos resultados satisfactorios y permite detectar automáticamente aliasing en nuestras imágenes:
+$$R_{ij}=\sum_{i,j} K_{i,j}*S_{i,j}$$
+
+Al ser una operación que modifica el valor de un elemento en función de los valores de los elementos adyacentes (en un menor o mayor radio) es una buena candidata para el caso que nos ocupa, en el que queremos detectar variaciones altas de valores en píxeles adjuntos, indicadoras de aliasing. 
+
+Existen muchos kernels indicados para diferentes propósitos, para el caso que nos ocupa diseñamos el siguiente, que ofrece resultados consistentes y precisos:
+
+$$
+\begin{bmatrix}
+    0 & -1 & 0 \\
+    -1 & 4 & -1 \\
+    0 & -1 & 0
+\end{bmatrix}
+$$
+
+La convolución de este kernel con una imagen realza los patrones "de ajedrez" indicadores de aliasing (variaciones de muy alta frecuencia píxel a píxel) y promedia a ~0 las variaciones de baja frecuencia entre píxeles adyacentes. Contando la proporción de píxeles con valores por encima de un cierto umbral con respecto al número total de píxeles podemos determinar con un alto grado de fiabilidad si la imagen está aliasada o no.
+
+>Demo aliasing detection
+
