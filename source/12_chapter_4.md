@@ -6,6 +6,8 @@ Cuando una señal periódica se muestrea con una frecuencia menor al doble de la
 
 Siendo un fenómeno que se suele dar en la conversión de señales analógico-digital, hemos tenido que prevenirlo y detectarlo. Los hologramas son aliasados con suma facilidad -propagamos señales con frecuencias muy altas, la FZP también puede llegar a tener frecuencias altas con respecto a la densidad de píxeles con que se muestrea la imagen-, y un holograma aliasado no sólo es erróneo, no se puede reconstruir con fidelidad.
 
+En concreto en las simulaciones realizadas hay que controlar no sólo que no se produzca en el muestreo del holograma, si no en todas y cada una de las fases de la simulación.
+
 ## Prevención
 
 >Análisis máxima frecuencia permitida
@@ -13,6 +15,15 @@ Siendo un fenómeno que se suele dar en la conversión de señales analógico-di
 >Fine tuning de parámetros de simulación
 
 >Parámetros ajustables y no ajustables. Limitaciones prácticas
+
+Puesto que FINCH está orientado a ser aplicado en sistemas reales conviene introducir los mismos constraints que aplican en la vida real en la simulación. Esto implica que algunos parámetros no podremos ajustarlos arbitrariamente, a saber:
+
+* La frecuencia de la luz
+* Los tamaños de la FZP y la imagen
+* La resolución de la FZP y la imagen
+* Las distancias de propagación
+
+
 
 ## Detección
 
