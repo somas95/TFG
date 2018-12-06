@@ -4,8 +4,6 @@
 
 La holografía es una técnica fotográfica que permite codificar de forma fidedigna una escena 3D en un medio 2D (ya sea este físico o digital), conservando y permitiendo reconstruir la escena original. En la holografía tradicional ésto se consigue conservando la información de la fase, información que se pierde en la fotografía convencional, que sólo registra la intensidad.
 
->Esquema de funcionamiento de un holograma
-
 Para conservar información de la fase es indispensable utilizar una fuente de luz altamente coherente, lo que introduce una serie de inconvenientes frente a la fotografía tradicional:
 
 * la necesidad de utilizar un láser convierte al proceso en inherentemente monocromático 
