@@ -1,34 +1,10 @@
 # Estudio por etapas de la propagación de la luz
 
-## La luz como onda EM
-
-La luz es una onda electromagnética, y se propaga como tal. Viene descrita por las ecuaciones de Maxwell:
-
-$$
-\begin{aligned}
-\nabla \cdot \vec{E} &=0 \\
-\nabla \times \vec{E} &=-\frac{\partial \vec{B}}{\partial t}\\
-\nabla \cdot \vec{B} &=0\\
-\nabla \times \vec{B} &=\mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
-\end{aligned}
-$$
-
-De estas ecuaciones se pueden deducir las ecuaciones de ondas de un campo EM:
-
-$$
-\begin{aligned}
-\nabla ^2 \vec{E} - \frac{1}{c^2} \frac{\partial ^2 \vec{E}}{\partial{t^2}} &= 0
--\nabla ^2 \vec{B} - \frac{1}{c^2} \frac{\partial ^2 \vec{B}}{\partial{t^2}} &= 0
-\end{aligned}
-$$
-
-Según la complejidad del campo inicial a propagar es conveniente usar diferentes métodos y aproximaciones
 
 ## Aproximaciones para la propagación de la luz
 
 >A desarrollar:
->Rayleigh-Sommerfeld Fraunhofer Diffraction 
->$$U(x,y,z)=\frac{-i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
+
 >Angular Spectrum method
 >Conveniencia del uso de transformadas discretas rápidas de Fourier en nuestro usecase
 
@@ -37,21 +13,39 @@ Según la complejidad del campo inicial a propagar es conveniente usar diferente
 
 Las simulaciones realizadas han seguido el siguiente esquema general:
 
->Esquema
+![](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/esquema_propagacion.svg)
 
-Se han considerado muestras bidimensionales y tridimensionales emisoras de luz, propagando la luz emitida por esas muestras hasta la FZP, y volviendo a propagar desde la FZP hasta el objetivo geométricamente y mediante la FFT mencionada.
+Se han considerado muestras emisoras de luz bidimensionales y tridimensionales, propagando la luz emitida por esas muestras hasta la FZP, y volviendo a propagar desde la FZP hasta el objetivo geométricamente y mediante la FFT mencionada.
 
-## Propagación de la fuente a la FZP
+### Propagación de la fuente a la FZP
 
 Tenemos una serie de fuentes puntuales e incoherentes entre sí. Cada fuente puntual es una fuente esférica:
 
 $$u(r)=\frac{A}{r} e^{\pm i kr}$$
 
-## Convolución con la FZP
+Al ser incoherentes entre sí podemos propagarlas independientemente hasta la FZP.
+
+### Convolución con la FZP
 
 La FZP utilizada fue definida como
 
 $$real\left[\exp(-i \frac{\pi}{a}(x^2 + y^2))\right]$$
+
+Para evitar problemas de frontera se convoluciona con un perfil gaussiano:
+
+>¿Y si ponemos una máscara circular en vez de cuadrada?
+
+![Fresnel Zone Plate](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/FZP2.png)
+
+### Propagación de la FZP al CCD
+
+Puesto que el frente de ondas a propagar no es trrivial no podemos resolver analíticamente la integral de difracción de Rayleigh-Sommerfeld Fraunhofer: 
+
+$$U(x,y,z)=\frac{-i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
+
+Utilizamos el método numérico desarrollado por Sheng-Wang[x](XXXXX); "Angular Spectrum propagation":
+
+ 
 
 
 
