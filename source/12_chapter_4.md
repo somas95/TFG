@@ -2,11 +2,11 @@
 
 Cuando una señal periódica se muestrea con una frecuencia menor al doble de la frecuencia máxima de la señal a muestrear (también conocida como frecuencia de Nyquist), no se puede reconstruir unívocamente la señal original. Este fenómeno se conoce como *aliasing* y una vez producido no se puede corregir. 
 
->Esquema aliasing
+![Si la señal original (roja) no se muestrea correctamente, la reconstrucción es incorrecta (línea de puntos)](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/aliasing.svg)
 
-Siendo un fenómeno que se suele dar en la conversión de señales analógico-digital, hemos tenido que prevenirlo y detectarlo. Los hologramas son aliasados con suma facilidad -propagamos señales con frecuencias muy altas, la FZP también puede llegar a tener frecuencias altas con respecto a la densidad de píxeles con que se muestrea la imagen-, y un holograma aliasado no sólo es erróneo, no se puede reconstruir con fidelidad.
+Siendo un fenómeno que se suele dar en la conversión de señales analógico-digital, hemos tenido que prevenirlo y detectarlo. Los hologramas son aliasados con suma facilidad -propagamos señales con frecuencias muy altas, la FZP también puede llegar a tener frecuencias altas con respecto a la densidad de píxeles con que se muestrea la imagen-, y un holograma aliasado no sólo es erróneo, no se puede reconstruir.
 
-En concreto en las simulaciones realizadas hay que controlar no sólo que no se produzca en el muestreo del holograma, si no en todas y cada una de las fases de la simulación.
+En concreto en las simulaciones realizadas hay que controlar no sólo que no se produzca aliasing en el muestreo del holograma, si no en todas y cada una de las fases de la simulación.
 
 ## Prevención
 
@@ -51,5 +51,4 @@ $$
 
 La convolución de este kernel con una imagen realza los patrones "de ajedrez" indicadores de aliasing (variaciones de muy alta frecuencia píxel a píxel) y promedia a ~0 las variaciones de baja frecuencia entre píxeles adyacentes. Contando la proporción de píxeles con valores por encima de un cierto umbral con respecto al número total de píxeles podemos determinar con un alto grado de fiabilidad si la imagen está aliasada o no.
 
->Demo aliasing detection
 

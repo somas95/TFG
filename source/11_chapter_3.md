@@ -1,21 +1,12 @@
 # Estudio por etapas de la propagación de la luz
 
 
-## Aproximaciones para la propagación de la luz
-
->A desarrollar:
-
->Angular Spectrum method
->Conveniencia del uso de transformadas discretas rápidas de Fourier en nuestro usecase
-
-
 ## Esquema operativo
 
 Las simulaciones realizadas han seguido el siguiente esquema general:
 
 ![](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/esquema_propagacion.svg)
 
-Se han considerado muestras emisoras de luz bidimensionales y tridimensionales, propagando la luz emitida por esas muestras hasta la FZP, y volviendo a propagar desde la FZP hasta el objetivo geométricamente y mediante la FFT mencionada.
 
 ### Propagación de la fuente a la FZP
 
@@ -39,9 +30,9 @@ Para evitar problemas de frontera se convoluciona con un perfil gaussiano:
 
 ### Propagación de la FZP al CCD
 
-Puesto que el frente de ondas a propagar no es trrivial no podemos resolver analíticamente la integral de difracción de Rayleigh-Sommerfeld Fraunhofer: 
+Puesto que el frente de ondas a propagar no es trivial no podemos resolver analíticamente la integral de difracción de Rayleigh-Sommerfeld Fraunhofer: 
 
-$$U(x,y,z)=\frac{-i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
+$$U(x,y,z)=-\frac{i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
 
 Utilizamos el método numérico desarrollado por Sheng-Wang[x](XXXXX); "Angular Spectrum propagation":
 

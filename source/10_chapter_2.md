@@ -8,8 +8,6 @@ Un sistema fotográfico es un sistema óptico en el que se sitúa un medio fotos
 
 ![Planos conjugados del mismo color](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/planos_conjugados.png)
 
-![Insert image title here](/home/manu/Documents/Uni/Cuarto repetido/1/TFG/Simulacion/untitled.tif)
-
 ## Holografía convencional
 
 Para registrar información de la fase -en vez de simplemente la intensidad- se registra en un medio fotosensible el patrón de interferencia producido por un haz de referencia con el haz que ilumina el objeto en cuestión. Ambos haces provienen de una fuente de luz altamente coherente -generalmente LASER- que es dividida en dos mediante un beam splitter
@@ -25,6 +23,6 @@ El sistema FINCH busca generar un patrón holográfico como el anterior pero sin
 
 ![Esquema de funcionamiento de FINCH](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/esquema_finch.png)
 
-Como en la holografía, y a diferencia de la fotografía convencional, donde el medio de registro proporciona directamente la imagen (o un negativo en fotografía analógica), para FINCH es necesario realizar una reconstrucción (de nuevo, analógica o digital) para recuperar la imagen deseada:
+Como en la holografía, y a diferencia de la fotografía convencional, donde el medio de registro proporciona directamente la imagen (o un negativo en fotografía analógica), para FINCH es necesario realizar una reconstrucción (de nuevo, analógica o digital) para recuperar la imagen deseada. Para ello se ilumina el holograma con una fuente de luz plana y coherente. La propia propagación reconstruye la imagen principal plano a plano:
 
-![Sección transversal de la propagación de un holograma FINCH](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/propagacion.png)
+![Sección transversal de la propagación del holograma FINCH de un punto](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/propagacion.png)
