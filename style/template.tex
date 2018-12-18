@@ -10,7 +10,7 @@ $endif$
 \let\origfigure=\figure
 \let\endorigfigure=\endfigure
 \renewenvironment{figure}[1][]{%
-\origfigure[b]
+\origfigure[H]
 }{%
 \endorigfigure
 }
@@ -205,9 +205,9 @@ $endif$
 
 $endif$
 $endif$
+\nocite{*}
 $if(biblatex)$
-\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
-
+\printbibliography
 $endif$
 $for(include-after)$
 $include-after$
