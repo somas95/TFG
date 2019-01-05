@@ -1,4 +1,14 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+%$if(lang)$
+%\ifxetex
+%\usepackage{polyglossia}
+%\setmainlanguage{spanish}
+%\else
+\usepackage[spanish]{babel}
+%\fi
+%$endif$
+
 $if(fontfamily)$
 \usepackage{$fontfamily$}
 $else$
@@ -142,14 +152,6 @@ $else$
 $endif$
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
-$endif$
-$if(lang)$
-\ifxetex
-  \usepackage{polyglossia}
-  \setmainlanguage{$mainlang$}
-\else
-  \usepackage[$lang$]{babel}
-\fi
 $endif$
 
 $if(title)$

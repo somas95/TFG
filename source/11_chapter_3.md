@@ -24,33 +24,28 @@ $$real\left[\exp(-i \frac{\pi}{a}(x^2 + y^2))\right]$$
 
 Para evitar problemas de frontera se convoluciona con un perfil gaussiano:
 
->¿Y si ponemos una máscara circular en vez de cuadrada?
-
 ![Fresnel Zone Plate](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/FZP2.png)
 
 ### Propagación de la FZP al CCD
 
-Puesto que el frente de ondas a propagar no es trivial no podemos resolver analíticamente la integral de difracción de Rayleigh-Sommerfeld Fraunhofer: 
+Puesto que el frente de ondas a propagar no es trivial, no podemos resolver analíticamente la integral de difracción de Rayleigh-Sommerfeld Fraunhofer: 
 
 $$U(x,y,z)=-\frac{i}{\lambda}\int U(x',y',0)\frac{z}{l^2}exp(ikl)\partial x'\partial y'$$
 
-Utilizamos el método numérico desarrollado por Sheng-Wang[x](XXXXX); "Angular Spectrum propagation":
+Utilizamos el método numérico desarrollado por Sheng-Wang[x](XXXXX); "Angular Spectrum propagation", que permite calcular mediante transformadas rápidas de Fourier la propagación a una distancia z:
 
 $$X=\mathscr{F}_{shift}(\mathscr{F}_2(\mathscr{F}(x)))$$
 $$G=\exp(iZ\sqrt{\left(\frac{2\pi}{\lambda}\right)^2-x^2-y^2})$$
 $$U=\mathscr{F}_{shift}(\mathscr{F}^{-1}_2(\mathscr{F}(XG)))$$
 
-Permite calcular mediante transformadas rápidas de Fourier la propagación a una distancia z si
+Sumamos las intensidades de cada frente de onda -por cada fuente puntual del objeto- propagado, obteniendo así el holograma FINCH
 
->Condición!
-
-Sumamos las intensidades de cada frente de onda -por cada fuente puntual del objeto- propagado; obteniendo así el holograma FINCH
-
->Holograma
+![Holograma FINCH](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/holograma.png)
 
 ### Reconstrucción
 
-Usamos de nuevo el método de propagación por espectro angular para reconstruir el holograma
+Usamos de nuevo el método de propagación por espectro angular para reconstruir el holograma en el plano deseado.
+
 
 
 

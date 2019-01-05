@@ -33,7 +33,6 @@ pdf:
 	--csl="$(STYLEDIR)/ref_format.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
-	-V lang=es \
 	-V papersize=a4paper \
 	-V documentclass=report \
 	-N \

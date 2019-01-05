@@ -10,12 +10,6 @@ En concreto en las simulaciones realizadas hay que controlar no sólo que no se 
 
 ## Prevención
 
->Análisis máxima frecuencia permitida
-
->Fine tuning de parámetros de simulación
-
->Parámetros ajustables y no ajustables. Limitaciones prácticas
-
 Puesto que FINCH está orientado a ser aplicado en sistemas reales conviene introducir los mismos constraints que aplican en la vida real en la simulación. Esto implica que algunos parámetros no podremos ajustarlos arbitrariamente, a saber:
 
 * La frecuencia de la luz
@@ -23,13 +17,15 @@ Puesto que FINCH está orientado a ser aplicado en sistemas reales conviene intr
 * La resolución de la FZP y la imagen
 * Las distancias de propagación
 
+El hecho de estar haciendo simulaciones por ordenador también introduce sus propias limitaciones en este aspecto, principalmente debido a los límites de precisión que tiene una variable en coma flotante.  
+
 
 
 ## Detección
 
 No es trivial detectar que un holograma está aliasado, así que se hace necesario desarrollar una herramienta que permita descartar imágenes aliasadas para no hacer reconstrucciones a partir de ellas y atribuir a otros tipos de errores los que son puramente de aliasing. 
 
-Para ello se ha diseñado un kernel de convolución para detectar altas frecuencias en la imagen:
+Para ello se ha diseñado un kernel de convolución para detectar altas frecuencias en la imagen.
 
 ### Matrices de convolución para detección de aliasing en una imagen
 
