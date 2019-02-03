@@ -1,4 +1,4 @@
-# Simulaciones realizadas
+# Simulaciones y resultados
 
 ## Holograma y reconstrucción de un punto
 

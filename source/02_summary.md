@@ -6,7 +6,3 @@ FINCH ("Fresnel INcoherent Correlation Holography") is a technique to produce ho
 
 FINCH ("Fresnel INcoherent Correlation Holography") es una técnica para producir hologramas a partir de fuentes de luz incoherentes. El presente trabajo es una revisión de dicha técnica, replicando mediante simulaciones por ordenador tanto la producción de hologramas como su posterior reconstrucción.
 
-
-\pagenumbering{roman}
-\setcounter{page}{1}
-
