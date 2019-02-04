@@ -1,4 +1,15 @@
 \footnotesize
+
+<!-- 
+Do not edit this page.
+
+References are automatically generated from the BibTex file (References.bib)
+
+...which you should create using your reference manager.
+-->
+
+# References
+
 [@rosen_fluorescence_2007]
 [@rosen_finch:_2011]
 [@schilling_three-dimensional_1997]
@@ -16,14 +27,3 @@
 [@noauthor_xbpeng/deeploco_2018]
 [@noauthor_visual_2018]
 [@noauthor_deeploco:_2018]
-
-
-<!-- 
-Do not edit this page.
-
-References are automatically generated from the BibTex file (References.bib)
-
-...which you should create using your reference manager.
--->
-
-# References

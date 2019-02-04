@@ -1,5 +1,5 @@
 # Simulaciones y resultados
-
+	
 ## Holograma y reconstrucción de un punto
 
 ![Holograma, reconstrucción, y su perfil](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/1_punto_holograma.png)
@@ -8,7 +8,7 @@
 
 Logramos resolver hasta un máximo de 0.6 mm a una distancia de 3 m en las condiciones experimentales descritas.
 
-![Diferentes perfiles de la reconstrucción para diferentes separaciones iniciales entre los dos puntos](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/resolucion.png)
+![Diferentes perfiles de la reconstrucción para diferentes separaciones iniciales entre los dos puntos](/home/manu/Documents/Uni/Cuarto repetido/2/TFG md/tfg_markdown/source/figures/resolucion.png){ width=75% }
 
 ## Pruebas de profundidad
 

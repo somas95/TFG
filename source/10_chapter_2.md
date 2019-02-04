@@ -1,4 +1,4 @@
-# Desarrollo teórico
+# Desarrollo teórico y experimental
 
 ## Sistemas formadores de imágenes
 
