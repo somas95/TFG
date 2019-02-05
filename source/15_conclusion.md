@@ -6,6 +6,7 @@ and outlining future areas for research
 -->
 ## Summary
 
+We studied the principles of FINCH holography, and developed the necessary tools to simulate it numerically in computers, 
 We could replicate successfully the FINCH principles in computer simulations. It proves itself as an interesting alternative to coherent holography, but with some drawbacks that have to be taken into account:
 
 ## Limitations
